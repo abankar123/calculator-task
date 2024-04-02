@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using javascript</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator bg-dark">
+        <input type="text" placeholder="0" id="a" name="display"> 
+        <div>
+            <button onclick="a.value +='7'">7</button>
+            <button onclick='document.getElementById("a").value +=8'>8</button>
+            <button onclick="a.value +='9'">9</button>
+            <button class="operator" class="h" onclick="a.value=a.value.slice(0,-1)">DEL</button>
+        </div>
+        <div>
+            <button onclick="a.value +='4'" >4</button>
+            <button onclick="a.value +='5'">5</button>
+            <button onclick="a.value +='6'">6</button>
+            <button class="operator" onclick="a.value +='+'">+</button>
+        </div>
+        <div>
+            <button onclick="a.value +='1'">1</button>
+            <button onclick="a.value +='2'">2</button>
+            <button onclick="a.value +='3'">3</button>
+            <button class="operator" onclick="a.value +='-'">-</button>
+        </div>
+        <div>
+            <button onclick="a.value +='.'">.</button>
+            <button onclick="a.value +='0'">0</button>
+            <button class="operator" onclick="a.value +='/'">/</button>
+            <button class="operator" onclick="a.value +='*'">*</button>
+        </div>
+        <div>
+            <button class="b1" onclick="a.value=''">RESET</button>
+            <button   class="b1" onclick="a.value=eval(a.value)">=</button>
+           
+        </div>
+    </div>
+</div>
+</body>
+</html>
